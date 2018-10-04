@@ -14,6 +14,7 @@ int main()
 	
 		root1 = -(b)/(2*a);
 		root2 = root1;
+		cout << "\n root1 " <<root1 << "\n root2 "<<root2 << "\n";
 	
 	}
 	else if (d > 0)
@@ -21,14 +22,17 @@ int main()
 
 		root1 = -(b+sqrt(d))/2*a; 
 		root2 = -(b-sqrt(d))/2*a; 
+		cout << "\n root1 " <<root1 << "\n root2 "<<root2 << "\n";
 
 
 	}
 	else 
 	{
-		root1= -(b)/(2*a);
-		root2= sqrt(-(b)/(2*a));
-		cout<<"root is imageniry";
+	    cout<<"Roots are imaginary";
+            int real= (-b/(2*a)); int imag= (sqrt(-d))/(2*a);
+            cout<<"Root 1:\t"<<real<<"+ i ("<<imag<<")";
+            cout<<"Root 2:\t"<<real<<"- i ("<<imag<<")";
+	    
 	}
-cout << "\n root1 " <<root1 << "\n root2 "<<root2 << "\n";
+
 }
